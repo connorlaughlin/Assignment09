@@ -35,6 +35,16 @@ def main():
         print(f"\nThe total amount of dog breeds represented is: {len(dog_breeds)}")
     else:
         print("Failed to fetch dog breeds.")
+        
+    #Get list of dog sub breeds
+    print("\nDog Breeds:")
+    dog_subbreeds = dog_api.get_dog_subbreeds()
+    if dog_subbreeds:
+        for subbreed in dog_subbreeds:
+            print(subbreed)
+        print(f"\n The total amount of dog sub-breeds represented is: {len(dog_subbreeds)}")
+    else:
+        print("Failed to fetch dog sub-breeds.")
 
 if __name__ == "__main__":
     main()
