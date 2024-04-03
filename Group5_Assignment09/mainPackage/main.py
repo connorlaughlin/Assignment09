@@ -27,22 +27,22 @@ def main():
         print("Failed to fetch random dog image.")
 
     # Get list of dog breeds
-    print("\nDog Breeds:")
+    print("\nKnown Dog Breeds:")
     dog_breeds = dog_api.get_dog_breeds()
     if dog_breeds:
         for breed in dog_breeds:
             print(breed)
-        print(f"\nThe total amount of dog breeds represented is: {len(dog_breeds)}")
+        print(f"\nThe total known amount of dog breeds: {len(dog_breeds)}")
     else:
         print("Failed to fetch dog breeds.")
         
     #Get list of dog sub breeds
-    print("\nDog Breeds:")
+    print("\nSub Dog Breeds:")
     dog_subbreeds = dog_api.get_dog_subbreeds()
     if dog_subbreeds:
         for subbreed in dog_subbreeds:
             print(subbreed)
-        print(f"\n The total amount of dog sub-breeds represented is: {len(dog_subbreeds)}")
+        print(f"\n The total amount of dog breeds represented is: {len(dog_subbreeds)}")
     else:
         print("Failed to fetch dog sub-breeds.")
 
