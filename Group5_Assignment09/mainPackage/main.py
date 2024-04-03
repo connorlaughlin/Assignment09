@@ -32,7 +32,7 @@ def main():
     if dog_breeds:
         for breed in dog_breeds:
             print(breed)
-        print(f"\nThe total known amount of dog breeds: {len(dog_breeds)}")
+        print(f"\nThe total number of represented dog breeds: {len(dog_breeds)}")
     else:
         print("Failed to fetch dog breeds.")
         
