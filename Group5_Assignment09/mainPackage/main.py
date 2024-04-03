@@ -42,7 +42,7 @@ def main():
     if dog_subbreeds:
         for subbreed in dog_subbreeds:
             print(subbreed)
-        print(f"\n The total amount of dog breeds represented is: {len(dog_subbreeds)}")
+        print(f"\n The total amount of sub-dog breeds represented is: {len(dog_subbreeds)}")
     else:
         print("Failed to fetch dog sub-breeds.")
 
