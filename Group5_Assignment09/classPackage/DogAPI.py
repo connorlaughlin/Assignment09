@@ -46,3 +46,17 @@ class DogAPI:
         except requests.exceptions.RequestException as e:
             print("Error fetching data:", e)
             return None
+    def get_dog_subbreeds(self):
+        endpoint = "breeds/list/hound/all"
+        url = self.base_url + endpoint 
+        try: 
+            response = requests.get(url)
+            if response.status_code == 200:
+                data = response.json()
+                return list(data.get('message').keys())
+            else: 
+                print("Error fetching data:", response.status_code)
+                return None 
+        except requests.exceptions.RequestException as e: 
+            print("Error fetching data:", e)
+            return None
